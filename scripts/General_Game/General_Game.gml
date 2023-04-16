@@ -4,7 +4,3 @@ function start_match(){
 		time_source_stop(obj_NetworkManager.myStartTimer);
 	}
 }
-
-function handle_paddle_push(paddle){
-	paddle.can_push = true;
-}
