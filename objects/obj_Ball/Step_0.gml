@@ -1,7 +1,6 @@
 if (bbox_bottom > room_height || bbox_top < 0){
-	if hSpeed < 0 hSpeed -= 0.3; else hSpeed += 0.3;
-	if vSpeed < 0 vSpeed -= 0.3; else vSpeed += 0.3;
-	vSpeed *= -1;
+	hSpeed = clamp(hSpeed * 1.2, -6,6);
+	vSpeed = clamp(-vSpeed * 1.2, -6,6);
 }
 
 if(x < 0 || x > room_width){

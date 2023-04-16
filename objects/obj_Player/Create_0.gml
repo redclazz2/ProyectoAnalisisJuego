@@ -1,5 +1,5 @@
 init_ball_score = 0;
-my_movement_speed = 1.5;
+my_movement_speed = 2;
 can_push = true;
 
 y = room_height / 2;

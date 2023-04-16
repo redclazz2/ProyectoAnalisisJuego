@@ -1,5 +1,5 @@
 if other.can_push{
-	hSpeed = -hSpeed;
+	hSpeed = clamp(-hSpeed * 1.2, -6,6);
 	other.can_push = false;
 	other.alarm[0] = 60;
 }
