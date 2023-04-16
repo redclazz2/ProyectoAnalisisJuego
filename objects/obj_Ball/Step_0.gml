@@ -9,6 +9,8 @@ if(x < 0 || x > room_width){
 	
 	hSpeed = random_range(-3,3);
 	vSpeed = random_range(-3,3);
+	
+	image_blend = c_white;
 }
 
 x+=hSpeed;

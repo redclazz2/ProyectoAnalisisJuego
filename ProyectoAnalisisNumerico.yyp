@@ -39,10 +39,12 @@
   "resources": [
     {"id":{"name":"General_Game","path":"scripts/General_Game/General_Game.yy",},},
     {"id":{"name":"spr_placeholder","path":"sprites/spr_placeholder/spr_placeholder.yy",},},
+    {"id":{"name":"obj_SurfaceManager","path":"objects/obj_SurfaceManager/obj_SurfaceManager.yy",},},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
     {"id":{"name":"obj_NetworkManager","path":"objects/obj_NetworkManager/obj_NetworkManager.yy",},},
     {"id":{"name":"obj_Ball","path":"objects/obj_Ball/obj_Ball.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_splat","path":"sprites/spr_splat/spr_splat.yy",},},
     {"id":{"name":"obj_SceneManager","path":"objects/obj_SceneManager/obj_SceneManager.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],

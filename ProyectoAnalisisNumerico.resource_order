@@ -20,8 +20,10 @@
     {"name":"General Game Functions","order":1,"path":"folders/Scripts/General Game Functions.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_SurfaceManager","order":2,"path":"objects/obj_SurfaceManager/obj_SurfaceManager.yy",},
     {"name":"obj_Ball","order":1,"path":"objects/obj_Ball/obj_Ball.yy",},
     {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
+    {"name":"spr_splat","order":2,"path":"sprites/spr_splat/spr_splat.yy",},
     {"name":"obj_SceneManager","order":1,"path":"objects/obj_SceneManager/obj_SceneManager.yy",},
   ],
 }
