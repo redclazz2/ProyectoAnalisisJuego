@@ -16,3 +16,30 @@ else if (player_id == 1)
 }
 
 image_blend = myColor;
+
+spriteRequest = noone;
+avatarSprite = noone;
+username = "";
+
+var _avatarUrl = gxc_get_query_param("avatarUrl");
+var _username = gxc_get_query_param("username");
+
+if (is_undefined(_avatarUrl) || is_undefined(_username))
+{
+	gxc_profile_get_info(function(_status, _result)
+    {
+		if (_status == 200)
+        {
+			var _avatarUrl = _result.data.avatarUrl;
+			var _username = _result.data.username;
+			
+			spriteRequest = sprite_add(_avatarUrl, 0, 0, 0, 0, 0);
+			username = _username;
+		}
+	});
+}
+else
+{
+	spriteRequest = sprite_add(_avatarUrl, 0, 0, 0, 0, 0);
+	username = _username;
+}
