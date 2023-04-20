@@ -1,6 +1,8 @@
 switch current_scene{
 	case "Title_Screen":
-		draw_text(1280/2, 720/2, "TITLE SCREEN.\nPRESS ENTER.");
+	var txt = scribble("[scale,1][wave][spr_mainlogo]");
+		txt.draw((display_get_gui_width()/2) - sprite_get_width(spr_mainlogo)/2,
+			(display_get_gui_height()/2) - sprite_get_height(spr_mainlogo)/2);
 	break;
 	
 	case "Waiting_Screen":
