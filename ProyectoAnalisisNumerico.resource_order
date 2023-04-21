@@ -33,6 +33,7 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"SPR_UI","order":4,"path":"folders/Sprites/SPR_UI.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"YoYo Shared Assets","order":18,"path":"folders/YoYo Shared Assets.yy",},
@@ -40,7 +41,6 @@
     {"name":"Objects","order":2,"path":"folders/YoYo Shared Assets/Objects.yy",},
     {"name":"Rooms","order":3,"path":"folders/YoYo Shared Assets/Rooms.yy",},
     {"name":"Sprites","order":4,"path":"folders/YoYo Shared Assets/Sprites.yy",},
-    {"name":"SPR_UI","order":4,"path":"folders/Sprites/SPR_UI.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"__scribble_get_krutidev_lookup_map","order":11,"path":"scripts/__scribble_get_krutidev_lookup_map/__scribble_get_krutidev_lookup_map.yy",},
@@ -132,6 +132,7 @@
     {"name":"__scribble_get_generator_state","order":9,"path":"scripts/__scribble_get_generator_state/__scribble_get_generator_state.yy",},
     {"name":"string_height_scribble","order":2,"path":"scripts/string_height_scribble/string_height_scribble.yy",},
     {"name":"scribble_typewriter_add_event","order":7,"path":"scripts/scribble_typewriter_add_event/scribble_typewriter_add_event.yy",},
+    {"name":"spr_waitingplayers","order":2,"path":"sprites/spr_waitingplayers/spr_waitingplayers.yy",},
     {"name":"string_height_scribble_ext","order":3,"path":"scripts/string_height_scribble_ext/string_height_scribble_ext.yy",},
     {"name":"__scribble_gen_5_finalize_bidi","order":5,"path":"scripts/__scribble_gen_5_finalize_bidi/__scribble_gen_5_finalize_bidi.yy",},
     {"name":"__scribble_gen_2_parser","order":2,"path":"scripts/__scribble_gen_2_parser/__scribble_gen_2_parser.yy",},
