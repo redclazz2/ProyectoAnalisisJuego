@@ -15,3 +15,4 @@ if(x < 0 || x > room_width){
 
 x+=hSpeed;
 y+=vSpeed;
+image_speed = point_distance(0,0,hSpeed,vSpeed);

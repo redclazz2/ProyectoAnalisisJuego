@@ -6,7 +6,7 @@ switch current_scene{
 	break;
 	
 	case "Waiting_Screen":
-	var txt = scribble("[scale,1][wave][spr_waitingplayers,0,10]");
+	var txt = scribble("[scale,1][wave][spr_waitingplayers,0,5]");
 		txt.draw((display_get_gui_width()/2) - sprite_get_width(spr_waitingplayers)/2,
 			(display_get_gui_height()/2) - sprite_get_height(spr_waitingplayers)/2);
 	break;
@@ -21,7 +21,6 @@ switch current_scene{
 	
 	case "In_Showcase1":
 		draw_sprite_stretched_ext(spr_placeholder,0,0,30,400,50,c_dkgray,0.8);
-
 		
 		with(obj_Player) {
 		
