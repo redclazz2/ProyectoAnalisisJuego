@@ -1,22 +1,12 @@
 var _input = rollback_get_input();
 
-if (_input.down)
-{
-        y += my_movement_speed;
-		y = clamp(y + my_movement_speed, sprite_height/2, room_height - sprite_height/2 );
-}
-if (_input.up)
-{
-        y -= my_movement_speed;
-		y = clamp(y - my_movement_speed, sprite_height/2, room_height - sprite_height/2 );
-}
+if (_input.up) {vspeed -= acc; should_stop = false;} 
+if (_input.down) {vspeed += acc; should_stop = false;}
+if(_input.right) {hspeed += acc; should_stop = false;}
+if(_input.left) {hspeed -= acc; should_stop = false;}
 
-if(_input.space and obj_SceneManager.current_scene == "In_Showcase0"){
-	init_ball_score += 1;
-}
+if(should_stop) {if vspeed > 0 vspeed -= 0.05; if hspeed > 0 hspeed -= 0.05; sprite_index = spr_player1_idle;}
+else sprite_index = spr_player1;
+should_stop = true;
 
-if (init_ball_score > 50 and obj_SceneManager.current_scene == "In_Showcase0"){
-	obj_SceneManager.current_scene = "In_Showcase1";
-	//random_set_seed(1);
-	instance_create_depth(room_width/2,room_height/2,0,obj_Ball);
-}
+image_angle = direction;

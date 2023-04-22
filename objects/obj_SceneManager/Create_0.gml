@@ -6,6 +6,8 @@ pfp0 = 0;
 username_1 = "";
 pfp1 = 0;
 
+
+
 with(obj_Player){
 	if player_id == 0 {
 		obj_SceneManager.username_0 = self.player_name;
