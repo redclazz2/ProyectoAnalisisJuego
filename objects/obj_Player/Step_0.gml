@@ -15,10 +15,9 @@ if(!_input.up and !_input.down and !_input.left and !_input.right){
 }else{
 	part_type_direction(Movement,point_direction(hspeed, vspeed, 0, 0),0,0,0);
 	part_particles_create(obj_SceneManager.movement_particles,x,y,Movement,1);
-	my_indicator = 0.5;
+	my_indicator = 0.4;
 	image_angle = direction;
 	friction = 0;
 }
-
 
 move_bounce_solid(false);

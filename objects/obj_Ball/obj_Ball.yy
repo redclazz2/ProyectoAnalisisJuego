@@ -31,14 +31,11 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
     "name": "spr_ball",
     "path": "sprites/spr_ball/spr_ball.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_placeholder",
-    "path": "sprites/spr_placeholder/spr_placeholder.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }
