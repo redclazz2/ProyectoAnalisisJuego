@@ -5,8 +5,8 @@ if (_input.down) vspeed += acc;
 if(_input.right) hspeed += acc; 
 if(_input.left) hspeed -= acc;
 
-if vspeed > 2.5 vspeed = 2.5
-if hspeed > 2.5 hspeed = 2.5
+if vspeed > 2 vspeed = 2
+if hspeed > 2 hspeed = 2
 
 
 if(!_input.up and !_input.down and !_input.left and !_input.right){
