@@ -10,13 +10,4 @@ switch current_scene{
 		txt.draw((display_get_gui_width()/2) - sprite_get_width(spr_waitingplayers)/2,
 			(display_get_gui_height()/2) - sprite_get_height(spr_waitingplayers)/2);
 	break;
-	
-	case "In_Showcase-1":
-		draw_text(1280/2, 720/2, "GET READY...");
-	break;
-	
-	case "In_Showcase1":
-		
-	break;
-
 }

@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
+    {"name":"Example","order":19,"path":"folders/Example.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
@@ -25,6 +26,7 @@
     {"name":"Quick Functions","order":8,"path":"folders/Scribble/Quick Functions.yy",},
     {"name":"Superfonts","order":9,"path":"folders/Scribble/Superfonts.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
+    {"name":"bktGlitch","order":2,"path":"folders/Scripts/bktGlitch.yy",},
     {"name":"General Game Functions","order":1,"path":"folders/Scripts/General Game Functions.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
@@ -35,8 +37,6 @@
     {"name":"SPR_UI","order":4,"path":"folders/Sprites/SPR_UI.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Example","order":19,"path":"folders/Example.yy",},
-    {"name":"bktGlitch","order":2,"path":"folders/Scripts/bktGlitch.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"__scribble_get_krutidev_lookup_map","order":11,"path":"scripts/__scribble_get_krutidev_lookup_map/__scribble_get_krutidev_lookup_map.yy",},

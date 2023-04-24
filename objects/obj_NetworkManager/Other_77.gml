@@ -1,3 +1,5 @@
+layer_create(-9999,"Squences");
+
 obj_SceneManager.current_scene = "In_Showcase-1";
 
 var lay_id = layer_get_id("Background"),
