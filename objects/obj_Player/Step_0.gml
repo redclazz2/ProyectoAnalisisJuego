@@ -1,11 +1,9 @@
 var _input = rollback_get_input();
-
 if global.listen_to_input{
 	if (_input.up) vspeed -= acc;
 	if (_input.down) vspeed += acc;
 	if(_input.right) hspeed += acc; 
 	if(_input.left) hspeed -= acc;
-
 
 	if vspeed > 2 vspeed = 2
 	if hspeed > 2 hspeed = 2
@@ -22,4 +20,5 @@ if global.listen_to_input{
 		friction = 0;
 	}
 	move_bounce_solid(false);
+
 }
