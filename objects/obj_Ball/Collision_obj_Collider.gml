@@ -1,3 +1,4 @@
-var pdir = point_direction(other.x, other.y, x, y);
-motion_add(pdir, 2);
-if speed > 1.5 speed = 1.5
+var rnd = random_range(-15,15);
+
+motion_add(other.direction + rnd, 10);
+if speed > 2.5 speed = 2.5

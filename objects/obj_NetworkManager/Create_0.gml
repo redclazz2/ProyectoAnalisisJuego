@@ -11,5 +11,5 @@ rollback_define_input({
 rollback_define_player(obj_Player);
 
 if(!rollback_join_game()){
-	rollback_create_game(2,false);
+	rollback_create_game(2,true);
 }

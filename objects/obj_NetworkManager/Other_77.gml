@@ -8,7 +8,6 @@ time_source_start(myStartTimer);
 instance_create_depth(0,0,-1,obj_level);
 instance_create_depth(room_width/2,room_height/2,-1,obj_Ball)
 
-
 #region Camera
 MultiTrackCamera.Track_Objects([obj_Player,obj_Ball]);
 #endregion
