@@ -1,0 +1,1 @@
+MultiTrackCamera.add_camera_angle(other.speed,point_direction(0,0,other.x,other.y))

@@ -6,12 +6,6 @@
 #macro ZOOM_SMOOTHING 0.05 // how quickly the camera zooms in or out, 1 = immediate, 0 = never. 
 #macro CAMERA_BORDER 120 //padding around tracked objects
 
-
-shake_fx = layer_get_fx("shake");
-shake_magnitude = 0;
-shake_speed = 1;
-
-
 viewport_number = 0; // assuming view_port 0 as a default, change this if the camera runs on a different view_port
 
 camera = camera_create();
@@ -30,6 +24,12 @@ _shake_counter = 0;
 _shake_duration = 0;
 _xcurve_channel = -1; _ycurve_channel = -1;
 _curve = 0;
+
+function add_camera_angle(_speed,_direction){
+	camera_set_view_angle(camera, _speed * _direction);
+}
+
+
 
 /// @func Shake_Camera(_magnitude, _duration, _shakeCurve)
 /// @param {real} _magnitude scaling factor for the screen shake, bigger magnitude bigger shake, defaults to 5
