@@ -1,5 +1,3 @@
 draw_self();
-if(obj_SceneManager.current_scene == "In_Showcase0")
-	draw_text(x,y - 30, init_ball_score);
-else if (player_local)
-	draw_text(x,y - 30, "You");
+if (player_local)
+	draw_sprite_ext(spr_indicator,0,x,y - 8,1/6,1/6,0,c_white,my_indicator);

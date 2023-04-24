@@ -11,7 +11,10 @@
     "name": "Game",
     "path": "folders/Objects/Game.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_Collider",
+    "path": "objects/obj_Collider/obj_Collider.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

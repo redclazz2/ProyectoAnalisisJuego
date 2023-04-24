@@ -100,6 +100,7 @@ var _factor = max(x_factor,y_factor);
 		
 // now we apply smoothing from current zoom factor to new zoom factor via lerp, we also ensure that we never zoom in too much. 		
 
+
 zoom_factor = lerp(zoom_factor,max(DEFAULT_ZOOM,_factor),ZOOM_SMOOTHING);
 
 
@@ -107,6 +108,10 @@ zoom_factor = lerp(zoom_factor,max(DEFAULT_ZOOM,_factor),ZOOM_SMOOTHING);
 // the original aspect ratio 
 var _new_hres = view_wport[viewport_number] * zoom_factor;
 var _new_vres = view_hport[viewport_number] * zoom_factor; 
+
+	
+
+	
 	
 if(!initialized)
 	{

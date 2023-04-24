@@ -2,9 +2,15 @@
 // You can write your code in this editor
 
 #macro DEFAULT_ZOOM 0.20 // lower value is more zoomed in, this is the value the camera will default to if there's only one tracked object 
-#macro SMOOTHING_FACTOR 15 // the higher the smoothing the slower the camera pans, 1 = immediate. 
-#macro ZOOM_SMOOTHING 0.07 // how quickly the camera zooms in or out, 1 = immediate, 0 = never. 
-#macro CAMERA_BORDER 130 //padding around tracked objects
+#macro SMOOTHING_FACTOR 17 // the higher the smoothing the slower the camera pans, 1 = immediate. 
+#macro ZOOM_SMOOTHING 0.05 // how quickly the camera zooms in or out, 1 = immediate, 0 = never. 
+#macro CAMERA_BORDER 120 //padding around tracked objects
+
+
+shake_fx = layer_get_fx("shake");
+shake_magnitude = 0;
+shake_speed = 1;
+
 
 viewport_number = 0; // assuming view_port 0 as a default, change this if the camera runs on a different view_port
 
@@ -12,7 +18,7 @@ camera = camera_create();
 view_camera[viewport_number] = camera;
 to_track = array_create(0);
 zoom_factor = DEFAULT_ZOOM;
-clamp_to_room = true; 
+clamp_to_room = false; 
 initialized = false; 
 
 	

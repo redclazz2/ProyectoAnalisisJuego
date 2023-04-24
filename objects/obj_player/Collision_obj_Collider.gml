@@ -1,0 +1,1 @@
+MultiTrackCamera.Shake_Camera(3,10,ShakeCurve);

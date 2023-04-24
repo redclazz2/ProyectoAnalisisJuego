@@ -1,12 +1,24 @@
 var _input = rollback_get_input();
 
-if (_input.up) {vspeed -= acc; should_stop = false;} 
-if (_input.down) {vspeed += acc; should_stop = false;}
-if(_input.right) {hspeed += acc; should_stop = false;}
-if(_input.left) {hspeed -= acc; should_stop = false;}
+if (_input.up) vspeed -= acc;
+if (_input.down) vspeed += acc;
+if(_input.right) hspeed += acc; 
+if(_input.left) hspeed -= acc;
 
-if(should_stop) {if vspeed > 0 vspeed -= 0.05; if hspeed > 0 hspeed -= 0.05; sprite_index = spr_player1_idle;}
-else sprite_index = spr_player1;
-should_stop = true;
+if vspeed > 2.5 vspeed = 2.5
+if hspeed > 2.5 hspeed = 2.5
 
-image_angle = direction;
+
+if(!_input.up and !_input.down and !_input.left and !_input.right){
+	if friction < 0.35 friction += 0.005;
+	my_indicator = 1;
+}else{
+	part_type_direction(Movement,point_direction(hspeed, vspeed, 0, 0),0,0,0);
+	part_particles_create(obj_SceneManager.movement_particles,x,y,Movement,1);
+	my_indicator = 0.5;
+	image_angle = direction;
+	friction = 0;
+}
+
+
+move_bounce_solid(false);
