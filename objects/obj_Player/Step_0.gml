@@ -16,9 +16,12 @@ if global.listen_to_input{
 		part_type_direction(Movement,point_direction(hspeed, vspeed, 0, 0),0,0,0);
 		part_particles_create(obj_SceneManager.movement_particles,x,y,Movement,1);
 		my_indicator = 0.4;
+		my_tutorial_active = false;
 		image_angle = direction;
 		friction = 0;
 	}
 	move_bounce_solid(false);
 
 }
+
+if !my_tutorial_active and my_tutorial_alpha > 0 my_tutorial_alpha -= 0.023;

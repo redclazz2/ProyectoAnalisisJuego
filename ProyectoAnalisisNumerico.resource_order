@@ -52,6 +52,7 @@
     {"name":"scribble","order":10,"path":"scripts/scribble/scribble.yy",},
     {"name":"__scribble_get_external_sound_map","order":7,"path":"scripts/__scribble_get_external_sound_map/__scribble_get_external_sound_map.yy",},
     {"name":"scribble_glyph_set","order":17,"path":"scripts/scribble_glyph_set/scribble_glyph_set.yy",},
+    {"name":"spr_ball","order":2,"path":"sprites/spr_ball/spr_ball.yy",},
     {"name":"__scribble_get_glyph_data","order":10,"path":"scripts/__scribble_get_glyph_data/__scribble_get_glyph_data.yy",},
     {"name":"__scribble_gen_6_build_lines","order":6,"path":"scripts/__scribble_gen_6_build_lines/__scribble_gen_6_build_lines.yy",},
     {"name":"scribble_font_get_default","order":9,"path":"scripts/scribble_font_get_default/scribble_font_get_default.yy",},
@@ -123,7 +124,6 @@
     {"name":"scribble_super_create","order":1,"path":"scripts/scribble_super_create/scribble_super_create.yy",},
     {"name":"__scribble_font_add_sprite","order":9,"path":"scripts/__scribble_font_add_sprite/__scribble_font_add_sprite.yy",},
     {"name":"__scribble_font_add_all_from_project","order":6,"path":"scripts/__scribble_font_add_all_from_project/__scribble_font_add_all_from_project.yy",},
-    {"name":"spr_splat","order":2,"path":"sprites/spr_splat/spr_splat.yy",},
     {"name":"__scribble_class_model","order":3,"path":"scripts/__scribble_class_model/__scribble_class_model.yy",},
     {"name":"scribble_font_bake_shadow","order":4,"path":"scripts/scribble_font_bake_shadow/scribble_font_bake_shadow.yy",},
     {"name":"bktGlitch_inline","order":1,"path":"scripts/bktGlitch_inline/bktGlitch_inline.yy",},
@@ -163,5 +163,6 @@
     {"name":"__scribble_get_krutidev_matra_lookup_map","order":12,"path":"scripts/__scribble_get_krutidev_matra_lookup_map/__scribble_get_krutidev_matra_lookup_map.yy",},
     {"name":"Ball","order":1,"path":"particles/Ball/Ball.yy",},
     {"name":"scribble_font_bake_shader","order":3,"path":"scripts/scribble_font_bake_shader/scribble_font_bake_shader.yy",},
+    {"name":"spr_tutorial","order":6,"path":"sprites/spr_tutorial/spr_tutorial.yy",},
   ],
 }
