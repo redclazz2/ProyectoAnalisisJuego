@@ -1,23 +1,23 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "STREAM_VS01_INTRO",
+  "name": "SFX_SCORE_ENEMY",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
   "bitRate": 128,
-  "compression": 3,
+  "compression": 0,
   "conversionMode": 0,
-  "duration": 2.059637,
+  "duration": 1.48898,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "STREAM_VS01_INTRO.wav",
-  "type": 1,
+  "soundFile": "SFX_SCORE_ENEMY.wav",
+  "type": 0,
   "volume": 0.5,
 }

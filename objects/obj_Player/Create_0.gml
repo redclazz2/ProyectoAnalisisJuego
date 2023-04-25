@@ -4,6 +4,7 @@ my_indicator = 0;
 my_tutorial_active = true;
 my_tutorial_alpha = 1;
 start_coor = 0;
+my_team = 0;
 #endregion
 
 depth = 0;
@@ -14,11 +15,13 @@ if (player_id == 0)
 {
         x = 50;
 		sprite_index = spr_player1;
+		my_team = 1;
 }
 else if (player_id == 1)
 {
         x = room_width - 50;
 		sprite_index = spr_player2;
+		my_team = 2;
 }
 
 start_coor = x;

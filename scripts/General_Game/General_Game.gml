@@ -1,4 +1,5 @@
 global.listen_to_input = false;
+global.my_team = 0;
 
 function start_match(){
 	if(rollback_sync_on_frame()){

@@ -2,7 +2,7 @@
 //Scene Manager Variables
 current_scene = "Title_Screen";
 
-show_debug_overlay(true);
+//show_debug_overlay(true);
 
 global.glitch = false;
 global.can_glitch = true;
