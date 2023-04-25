@@ -10,7 +10,6 @@ function start_match(){
 }
 
 function allow_input(){
-
 	if(rollback_confirmed_frame == rollback_current_frame){
 		allow_game_start();
 	}else{

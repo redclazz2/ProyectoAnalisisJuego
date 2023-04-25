@@ -1,0 +1,1 @@
+time_source_destroy(ball_timer);

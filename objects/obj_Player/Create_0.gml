@@ -3,6 +3,8 @@ acc = 0.1;
 my_indicator = 0;
 #endregion
 
+depth = 0;
+
 y = room_height / 2;
 
 if (player_id == 0)
