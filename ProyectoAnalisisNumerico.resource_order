@@ -38,6 +38,7 @@
     {"name":"SPR_MENUS AND TEXT","order":7,"path":"folders/Sprites/SPR_UI/SPR_MENUS AND TEXT.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"SPR_ENVIRONMENT_DECOR","order":8,"path":"folders/Sprites/SPR_ENVIRONMENT_DECOR.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"__scribble_get_krutidev_lookup_map","order":11,"path":"scripts/__scribble_get_krutidev_lookup_map/__scribble_get_krutidev_lookup_map.yy",},
@@ -131,6 +132,7 @@
     {"name":"spr_score","order":5,"path":"sprites/spr_score/spr_score.yy",},
     {"name":"__scribble_class_model","order":3,"path":"scripts/__scribble_class_model/__scribble_class_model.yy",},
     {"name":"scribble_font_bake_shadow","order":4,"path":"scripts/scribble_font_bake_shadow/scribble_font_bake_shadow.yy",},
+    {"name":"spr_star03","order":2,"path":"sprites/spr_star03/spr_star03.yy",},
     {"name":"bktGlitch_inline","order":1,"path":"scripts/bktGlitch_inline/bktGlitch_inline.yy",},
     {"name":"__scribble_font_add_from_project","order":7,"path":"scripts/__scribble_font_add_from_project/__scribble_font_add_from_project.yy",},
     {"name":"scribble_font_get_glyph_ranges","order":10,"path":"scripts/scribble_font_get_glyph_ranges/scribble_font_get_glyph_ranges.yy",},
@@ -170,6 +172,7 @@
     {"name":"scribble_font_bake_outline","order":4,"path":"scripts/scribble_font_bake_outline/scribble_font_bake_outline.yy",},
     {"name":"__scribble_get_krutidev_matra_lookup_map","order":12,"path":"scripts/__scribble_get_krutidev_matra_lookup_map/__scribble_get_krutidev_matra_lookup_map.yy",},
     {"name":"Ball","order":1,"path":"particles/Ball/Ball.yy",},
+    {"name":"spr_star02","order":1,"path":"sprites/spr_star02/spr_star02.yy",},
     {"name":"scribble_font_bake_shader","order":3,"path":"scripts/scribble_font_bake_shader/scribble_font_bake_shader.yy",},
     {"name":"spr_tutorial","order":3,"path":"sprites/spr_tutorial/spr_tutorial.yy",},
   ],

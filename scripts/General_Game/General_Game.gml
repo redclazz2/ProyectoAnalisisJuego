@@ -2,21 +2,18 @@ global.listen_to_input = false;
 global.my_team = 0;
 
 function start_match(){
-	if(rollback_sync_on_frame()){
-		obj_SceneManager.current_scene = "In_Showcase1";
-		seq = layer_sequence_create("Squences", room_width/2, room_height/2, VS_Intro);
-		layer_sequence_play(seq);
-		time_source_stop(obj_NetworkManager.myStartTimer);
+	if(rollback_confirmed_frame != rollback_current_frame){
+		rollback_sync_on_frame();
 	}
+	
+	obj_SceneManager.current_scene = "In_Showcase1";
+	seq = layer_sequence_create("Squences", room_width/2, room_height/2, VS_Intro);
+	layer_sequence_play(seq);
 }
 
 function allow_input(){
-	if(rollback_confirmed_frame == rollback_current_frame){
-		allow_game_start();
-	}else{
-		rollback_sync_on_frame();
-		allow_game_start();
-	}
+	rollback_sync_on_frame();
+	allow_game_start();
 }
 
 function play_soundtrack_intro(){

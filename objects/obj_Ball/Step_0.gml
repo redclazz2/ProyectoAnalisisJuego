@@ -43,5 +43,4 @@ if x > 305 or x < 10 {
 }
 
 if !global.listen_to_input speed = 0;
-
 if score_time_out > 0 score_time_out -= 0.05;

@@ -14,9 +14,10 @@ if obj_Ball.score_time_out > 0{
 	score_alpha = obj_Ball.score_time_out;
 }
 	
-
+if global.listen_to_input {
 draw_sprite_ext(spr_score,obj_Ball.score_team_1,x_score_position_T1,y_score_position,score_scale,score_scale,
 	0,c_white,score_alpha);
 draw_sprite_ext(spr_score,obj_Ball.score_team_2,x_score_position_T2,y_score_position,score_scale,score_scale,
 	0,c_white,score_alpha);
+}
 draw_self();

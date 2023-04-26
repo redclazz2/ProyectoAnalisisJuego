@@ -6,7 +6,10 @@ var lay_id = layer_get_id("Background"),
 	back_id = layer_background_get_id(lay_id);
 layer_background_sprite(back_id, spr_backbattle);
 
-time_source_start(myStartTimer);
+//time_source_start(myStartTimer);
+
+alarm[0] = 2 * room_speed;
+
 instance_create_depth(0,0,-1,obj_level);
 instance_create_depth(room_width/2,room_height/2,-1,obj_Ball)
 
