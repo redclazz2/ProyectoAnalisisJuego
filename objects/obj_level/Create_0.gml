@@ -1,3 +1,5 @@
+global.collision_level = id;
+
 depth = 10;
 
 x = room_width/2;

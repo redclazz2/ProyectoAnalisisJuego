@@ -46,9 +46,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPR_PLAYERS","folderPath":"folders/Sprites/SPR_PLAYERS.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPR_ROOM","folderPath":"folders/Sprites/SPR_ROOM.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPR_UI","folderPath":"folders/Sprites/SPR_UI.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPR_MENUS AND TEXT","folderPath":"folders/Sprites/SPR_UI/SPR_MENUS AND TEXT.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPR_MENUS AND TEXT","folderPath":"folders/Sprites/SPR_UI/SPR_MENUS AND TEXT.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"GXC_Library_Documentation.pdf","CopyToMask":0,"filePath":"datafiles",},
@@ -56,7 +56,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.400.0.317",
+    "IDEVersion": "2023.400.0.324",
   },
   "resources": [
     {"id":{"name":"__scribble_get_krutidev_lookup_map","path":"scripts/__scribble_get_krutidev_lookup_map/__scribble_get_krutidev_lookup_map.yy",},},
@@ -85,10 +85,12 @@
     {"id":{"name":"scribble_font_bake_outline_8dir_2px","path":"scripts/scribble_font_bake_outline_8dir_2px/scribble_font_bake_outline_8dir_2px.yy",},},
     {"id":{"name":"scribble_anim_wave","path":"scripts/scribble_anim_wave/scribble_anim_wave.yy",},},
     {"id":{"name":"__scribble_config_colours","path":"scripts/__scribble_config_colours/__scribble_config_colours.yy",},},
+    {"id":{"name":"SFX_ACTIVATE_BONUS","path":"sounds/SFX_ACTIVATE_BONUS/SFX_ACTIVATE_BONUS.yy",},},
     {"id":{"name":"spr_backbattle","path":"sprites/spr_backbattle/spr_backbattle.yy",},},
     {"id":{"name":"scribble_super_glyph_copy","path":"scripts/scribble_super_glyph_copy/scribble_super_glyph_copy.yy",},},
     {"id":{"name":"__scribble_class_null_element","path":"scripts/__scribble_class_null_element/__scribble_class_null_element.yy",},},
     {"id":{"name":"scribble_super_clear","path":"scripts/scribble_super_clear/scribble_super_clear.yy",},},
+    {"id":{"name":"SFX_BONUS_END","path":"sounds/SFX_BONUS_END/SFX_BONUS_END.yy",},},
     {"id":{"name":"__scribble_font_add_msdf_from_project","path":"scripts/__scribble_font_add_msdf_from_project/__scribble_font_add_msdf_from_project.yy",},},
     {"id":{"name":"__scribble_system","path":"scripts/__scribble_system/__scribble_system.yy",},},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},

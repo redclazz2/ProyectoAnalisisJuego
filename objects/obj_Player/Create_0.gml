@@ -5,6 +5,10 @@ my_tutorial_active = true;
 my_tutorial_alpha = 1;
 start_coor = 0;
 my_team = 0;
+
+
+my_bonus_cooldown = 0;
+my_particle = Movement;
 #endregion
 
 depth = 0;
@@ -29,3 +33,4 @@ start_coor = x;
 
 image_xscale = image_xscale / 4;
 image_yscale = image_yscale / 4;
+image_speed = 0;
