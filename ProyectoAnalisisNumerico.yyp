@@ -48,6 +48,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPR_UI","folderPath":"folders/Sprites/SPR_UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPR_MENUS AND TEXT","folderPath":"folders/Sprites/SPR_UI/SPR_MENUS AND TEXT.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"GXC_Library_Documentation.pdf","CopyToMask":0,"filePath":"datafiles",},
@@ -161,6 +162,7 @@
     {"id":{"name":"scribble_super_create","path":"scripts/scribble_super_create/scribble_super_create.yy",},},
     {"id":{"name":"__scribble_font_add_sprite","path":"scripts/__scribble_font_add_sprite/__scribble_font_add_sprite.yy",},},
     {"id":{"name":"__scribble_font_add_all_from_project","path":"scripts/__scribble_font_add_all_from_project/__scribble_font_add_all_from_project.yy",},},
+    {"id":{"name":"spr_score","path":"sprites/spr_score/spr_score.yy",},},
     {"id":{"name":"__scribble_class_model","path":"scripts/__scribble_class_model/__scribble_class_model.yy",},},
     {"id":{"name":"scribble_font_bake_shadow","path":"scripts/scribble_font_bake_shadow/scribble_font_bake_shadow.yy",},},
     {"id":{"name":"bktGlitch_inline","path":"scripts/bktGlitch_inline/bktGlitch_inline.yy",},},

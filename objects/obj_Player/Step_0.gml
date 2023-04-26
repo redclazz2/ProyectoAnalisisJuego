@@ -5,8 +5,8 @@ if global.listen_to_input{
 	if(_input.right) hspeed += acc; 
 	if(_input.left) hspeed -= acc;
 
-	if vspeed > 2 vspeed = 2
-	if hspeed > 2 hspeed = 2
+	if vspeed > 1.7 vspeed = 1.7
+	if hspeed > 1.7 hspeed = 1.7
 
 
 	if(!_input.up and !_input.down and !_input.left and !_input.right){

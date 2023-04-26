@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "SPR_UI",
-    "path": "folders/Sprites/SPR_UI.yy",
+    "name": "SPR_MENUS AND TEXT",
+    "path": "folders/Sprites/SPR_UI/SPR_MENUS AND TEXT.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
