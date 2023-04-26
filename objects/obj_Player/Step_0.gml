@@ -39,7 +39,8 @@ if global.listen_to_input{
 		friction = 0;
 	}
 	move_bounce_solid(false);
-
+}else{
+	friction = 1;
 }
 
 if !my_tutorial_active and my_tutorial_alpha > 0 my_tutorial_alpha -= 0.023;

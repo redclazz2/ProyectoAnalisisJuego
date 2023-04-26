@@ -35,6 +35,13 @@ if x > 305 or x < 10 {
 	
 	x = room_width/2;
 	y = room_height /2;
+	
+	if score_team_1 == 8 or score_team_2 == 8{
+		audio_play_sound(SFX_SCORE_FINAL,2,false);
+		allow_game_end();
+	}
 }
+
+if !global.listen_to_input speed = 0;
 
 if score_time_out > 0 score_time_out -= 0.05;

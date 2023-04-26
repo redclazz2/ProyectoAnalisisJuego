@@ -27,3 +27,12 @@ function allow_game_start(){
 	audio_play_sound(STREAM_VS01,1,1);
 	global.listen_to_input = true;
 }
+
+function allow_game_end(){
+	if(rollback_confirmed_frame == rollback_current_frame){
+		global.listen_to_input = false;
+	}else{
+		rollback_sync_on_frame();
+		global.listen_to_input = false;
+	}
+}
