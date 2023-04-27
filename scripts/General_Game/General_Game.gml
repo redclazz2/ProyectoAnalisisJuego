@@ -1,6 +1,8 @@
 global.listen_to_input = false;
 global.my_team = 0;
 global.sequence = 0;
+global.sampler_red = make_color_rgb(180,98,123);
+global.sampler_blue = make_color_rgb(99,145,202);
 
 function start_match(){
 	rollback_sync_on_frame()
