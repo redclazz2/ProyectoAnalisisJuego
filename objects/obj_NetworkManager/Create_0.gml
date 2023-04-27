@@ -1,3 +1,5 @@
+layer_create(-9999,"Squences");
+
 rollback_define_input({
 	up: [vk_up, ord("W")],
     down: [vk_down, ord("S")],

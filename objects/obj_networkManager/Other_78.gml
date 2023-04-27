@@ -1,7 +1,6 @@
 switch rollback_event_id{
 	
 	case rollback_synchronized_with_peer:
-		layer_create(-9999,"Squences");
 
 		obj_SceneManager.current_scene = "In_Showcase-1";
 

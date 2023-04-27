@@ -8,6 +8,8 @@ my_team = 0;
 
 
 my_bonus_cooldown = 0;
+my_color = 0;
+my_enemy_color = 0;
 #endregion
 
 depth = 0;
@@ -20,6 +22,9 @@ if (player_id == 0)
 		sprite_index = spr_player1;
 		my_team = 1;
 		direction = 0;
+		
+		my_color = make_color_rgb(99,145,202);
+		my_enemy_color = make_color_rgb(180,98,123);
 }
 else if (player_id == 1)
 {
@@ -27,6 +32,9 @@ else if (player_id == 1)
 		sprite_index = spr_player2;
 		direction = 180;
 		my_team = 2;
+		
+		my_color = make_color_rgb(180,98,123);
+		my_enemy_color = make_color_rgb(99,145,202);
 }
 
 start_coor = x;
