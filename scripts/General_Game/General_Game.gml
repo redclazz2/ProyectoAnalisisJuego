@@ -10,7 +10,8 @@ function start_match(){
 }
 
 function allow_input(){
-	audio_play_sound(STREAM_VS01,1,1);
+	if !audio_is_playing(STREAM_VS01)
+		audio_play_sound(STREAM_VS01,1,1);
 }
 
 function play_soundtrack_intro(){
