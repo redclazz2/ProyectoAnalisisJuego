@@ -4,7 +4,7 @@ image_angle += speed;
 
 if x > 305 or x < 10 {
 	score_time_out = 10;
-	audio_play_sound(SFX_BALL_SCORE,0,false);
+	play_audio_resource(SFX_BALL_SCORE,0,false);
 	MultiTrackCamera.Shake_Camera(6,15,ShakeCurve);
 	global.can_glitch = true;
 	global.glitch = true;
@@ -22,8 +22,8 @@ if x > 305 or x < 10 {
 		score_team_2 ++;
 	}
 	
-	if global.my_team == _team_scored and !audio_is_playing(SFX_SCORE_ALLY) audio_play_sound(SFX_SCORE_ALLY,0,false);
-	else if !audio_is_playing(SFX_SCORE_ENEMY) audio_play_sound(SFX_SCORE_ENEMY,0,false);
+	if global.my_team == _team_scored play_audio_resource(SFX_SCORE_ALLY,0,false);
+	else play_audio_resource(SFX_SCORE_ENEMY,0,false);
 
 	part_particles_create_color(obj_SceneManager.movement_particles,x,y,Score,myPartColor,25);
 	
@@ -32,8 +32,10 @@ if x > 305 or x < 10 {
 	y = room_height /2;
 	
 	if score_team_1 == 8 or score_team_2 == 8{
-		audio_play_sound(SFX_SCORE_FINAL,2,false);
+		play_audio_resource(SFX_SCORE_FINAL,2,false);
+		audio_stop_sound(STREAM_VS01);
 		allow_game_end();
+		visible = false;
 	}
 }
 

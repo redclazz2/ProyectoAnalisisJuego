@@ -7,17 +7,18 @@ global.sampler_blue = make_color_rgb(99,145,202);
 function start_match(){
 	rollback_sync_on_frame()
 	obj_SceneManager.current_scene = "In_Showcase1";
-	global.sequence = layer_sequence_create("Squences", room_width/2, room_height/2, VS_Intro);
-	layer_sequence_play(global.sequence);
+	if global.sequence = 0 {
+		global.sequence = layer_sequence_create("Squences", room_width/2, room_height/2, VS_Intro);
+		layer_sequence_play(global.sequence);
+	}
 }
 
 function allow_input(){
-	if !audio_is_playing(STREAM_VS01)
-		audio_play_sound(STREAM_VS01,1,1);
+	play_audio_resource(STREAM_VS01,1,1);
 }
 
 function play_soundtrack_intro(){
-	audio_play_sound(STREAM_VS01_INTRO,0,0);
+	play_audio_resource(STREAM_VS01_INTRO,0,0);
 }
 
 function allow_game_end(){
@@ -27,4 +28,9 @@ function allow_game_end(){
 		rollback_sync_on_frame();
 		global.listen_to_input = false;
 	}
+}
+
+function play_audio_resource(audio,a,b){
+	if !audio_is_playing(audio)
+		audio_play_sound(audio,a,b);
 }

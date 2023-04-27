@@ -17,11 +17,10 @@ if global.listen_to_input{
 		my_bonus_cooldown = 12;
 		acc = 0.05;
 		
-		alarm[0] = 160;
+		alarm[0] = 170;
 	}
 
-	if vspeed > 1.7 vspeed = 1.7
-	if hspeed > 1.7 hspeed = 1.7
+	if speed > 2.4 speed = 2.4
 	
 
 	if(!_input.up and !_input.down and !_input.left and !_input.right){
@@ -35,10 +34,9 @@ if global.listen_to_input{
 		image_angle = direction;
 		friction = 0;
 	}
-	move_bounce_solid(false);
 }else{
 	friction = 1;
 }
-
+move_bounce_all(false);
 if !my_tutorial_active and my_tutorial_alpha > 0 my_tutorial_alpha -= 0.023;
 if my_bonus_cooldown > 0 my_bonus_cooldown -= 0.02;
