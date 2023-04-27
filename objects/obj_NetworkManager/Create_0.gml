@@ -1,5 +1,3 @@
-myStartTimer = time_source_create(time_source_global,1,time_source_units_frames,start_match,[],-1);
-
 rollback_define_input({
 	up: [vk_up, ord("W")],
     down: [vk_down, ord("S")],

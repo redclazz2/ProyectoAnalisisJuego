@@ -5,7 +5,7 @@ var x_score_position_T1 = room_width/2 - 35,
 	y_score_position = room_height/2 - 50,
 	score_scale = 1,
 	score_alpha = 0.7;
-	
+if instance_exists(obj_Ball){
 if obj_Ball.score_time_out > 0{
 	x_score_position_T1 -= 40;
 	x_score_position_T2 += 40;
@@ -19,5 +19,6 @@ draw_sprite_ext(spr_score,obj_Ball.score_team_1,x_score_position_T1,y_score_posi
 	0,c_white,score_alpha);
 draw_sprite_ext(spr_score,obj_Ball.score_team_2,x_score_position_T2,y_score_position,score_scale,score_scale,
 	0,c_white,score_alpha);
+}
 }
 draw_self();

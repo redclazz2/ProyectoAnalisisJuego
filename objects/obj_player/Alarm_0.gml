@@ -1,4 +1,3 @@
-my_particle = Movement;
 image_xscale = image_xscale / 2.6;
 image_yscale = image_yscale / 2.6;
 acc = 0.1;

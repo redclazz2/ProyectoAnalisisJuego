@@ -40,7 +40,7 @@
   "showBackdrop": true,
   "showBackdropImage": false,
   "spriteId": null,
-  "timeUnits": 0,
+  "timeUnits": 1,
   "tracks": [
     {"resourceType":"GMGraphicTrack","resourceVersion":"1.0","name":"spr_go","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"1.0","Keyframes":[
           {"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"AssetSpriteKeyframe","resourceVersion":"1.0","Id":{"name":"spr_go","path":"sprites/spr_go/spr_go.yy",},},},"Disabled":false,"id":"5289c57e-47cd-476a-9ebb-1c8746c089c4","IsCreationKey":false,"Key":281.0,"Length":113.0,"Stretch":false,},

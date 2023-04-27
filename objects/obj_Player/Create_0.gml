@@ -8,7 +8,6 @@ my_team = 0;
 
 
 my_bonus_cooldown = 0;
-my_particle = Movement;
 #endregion
 
 depth = 0;
