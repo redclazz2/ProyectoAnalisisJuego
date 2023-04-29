@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 1.04,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX INTERACTION",
+    "path": "folders/Sounds/SFX/SFX INTERACTION.yy",
   },
   "preload": false,
   "sampleRate": 44100,

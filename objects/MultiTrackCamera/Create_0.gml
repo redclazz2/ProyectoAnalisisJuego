@@ -25,12 +25,6 @@ _shake_duration = 0;
 _xcurve_channel = -1; _ycurve_channel = -1;
 _curve = 0;
 
-function add_camera_angle(_speed,_direction){
-	camera_set_view_angle(camera, _speed * _direction);
-}
-
-
-
 /// @func Shake_Camera(_magnitude, _duration, _shakeCurve)
 /// @param {real} _magnitude scaling factor for the screen shake, bigger magnitude bigger shake, defaults to 5
 /// @param {real} _duration duration of the shake, in frames, defaults to one second (room speed)

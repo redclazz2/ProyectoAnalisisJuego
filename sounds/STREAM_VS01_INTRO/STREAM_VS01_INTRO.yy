@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 2.059637,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "STREAM",
+    "path": "folders/Sounds/STREAM.yy",
   },
   "preload": false,
   "sampleRate": 44100,

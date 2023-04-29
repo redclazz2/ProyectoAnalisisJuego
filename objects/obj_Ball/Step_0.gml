@@ -31,10 +31,17 @@ if x > 305 or x < 10 {
 	x = room_width/2;
 	y = room_height /2;
 	
+	with(obj_Player){
+		y = room_height/2;
+		x = start_coor;
+		part_particles_create(obj_SceneManager.movement_particles,x,y,Ball,30);
+	}
+	
 	if score_team_1 == 8 or score_team_2 == 8{
 		play_audio_resource(SFX_SCORE_FINAL,2,false);
 		audio_stop_sound(STREAM_VS01);
 		allow_game_end();
+		MultiTrackCamera.Stop_Tracking_All();
 		visible = false;
 	}
 }

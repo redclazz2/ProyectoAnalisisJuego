@@ -7,6 +7,8 @@ current_scene = "Title_Screen";
 global.glitch = false;
 global.can_glitch = true;
 
+audio_play_sound(STREAM_WAITING,1,true);
+
 #region movement particle
 
 movement_particles = part_system_create(Movement);

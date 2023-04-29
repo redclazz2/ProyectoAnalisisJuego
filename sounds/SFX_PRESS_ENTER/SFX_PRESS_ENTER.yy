@@ -12,12 +12,12 @@
   "conversionMode": 0,
   "duration": 1.515102,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX UI",
+    "path": "folders/Sounds/SFX/SFX UI.yy",
   },
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "SFX_PRESS_ENTER.wav",
   "type": 0,
-  "volume": 0.6,
+  "volume": 0.4,
 }
