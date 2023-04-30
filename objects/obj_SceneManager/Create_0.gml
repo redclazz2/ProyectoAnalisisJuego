@@ -4,6 +4,9 @@ current_scene = "Title_Screen";
 
 //show_debug_overlay(true);
 
+#macro mouse_gui_x device_mouse_x_to_gui(0)
+#macro mouse_gui_y device_mouse_y_to_gui(0)
+
 global.glitch = false;
 global.can_glitch = true;
 

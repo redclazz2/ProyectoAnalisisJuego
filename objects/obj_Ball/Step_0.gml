@@ -41,8 +41,8 @@ if x > 305 or x < 10 {
 		play_audio_resource(SFX_SCORE_FINAL,2,false);
 		audio_stop_sound(STREAM_VS01);
 		allow_game_end();
-		MultiTrackCamera.Stop_Tracking_All();
-		visible = false;
+		//MultiTrackCamera.Stop_Tracking_All();
+		//visible = false;
 		
 		with(obj_SceneManager){
 			current_scene = "RESULTS";

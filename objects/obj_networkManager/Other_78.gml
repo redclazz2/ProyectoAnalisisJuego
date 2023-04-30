@@ -1,7 +1,6 @@
 switch rollback_event_id{
 	
 	case rollback_synchronized_with_peer:
-
 		obj_SceneManager.current_scene = "In_Showcase-1";
 
 		var lay_id = layer_get_id("Background"),
@@ -15,5 +14,6 @@ switch rollback_event_id{
 		MultiTrackCamera.Track_Objects([obj_Player,obj_Ball]);
 		#endregion
 	break;
-
+	
+	
 }

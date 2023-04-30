@@ -3,11 +3,13 @@ global.my_team = 0;
 global.sequence = 0;
 global.sampler_red = make_color_rgb(180,98,123);
 global.sampler_blue = make_color_rgb(99,145,202);
+global.yes_button = 0;
+global.restart = 0;
 
 function start_match(){
 	rollback_sync_on_frame()
 	obj_SceneManager.current_scene = "In_Showcase1";
-	if global.sequence = 0 {
+	if global.sequence == 0 {
 		global.sequence = layer_sequence_create("Squences", room_width/2, room_height/2, VS_Intro);
 		layer_sequence_play(global.sequence);
 	}

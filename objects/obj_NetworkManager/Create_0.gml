@@ -5,7 +5,10 @@ rollback_define_input({
     down: [vk_down, ord("S")],
 	left: [vk_left, ord("A")],
 	right: [vk_right, ord("D")],
-	space: [vk_space]
+	space: [vk_space],
+	left_click: [mb_left],
+	x_mouse: [m_axisx_gui],
+	y_mouse: [m_axisy_gui]
 });
 
 rollback_define_player(obj_Player);
