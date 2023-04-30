@@ -19,12 +19,14 @@ if x > 305 or x < 10 {
 		part_type_color3(Score,global.sampler_blue,global.sampler_blue,global.sampler_red);
 		_team_scored = 1;
 		score_team_1 ++;
+		global.sequence = layer_sequence_create("Squences", room_width/2, room_height/2, VS_goal_team2);		
 	}else{
 		part_type_color3(Score,global.sampler_red,global.sampler_red,global.sampler_blue);
 		_team_scored = 2;
 		score_team_2 ++;
+		global.sequence = layer_sequence_create("Squences", room_width/2, room_height/2, VS_goal_team1);	
 	}
-	
+	layer_sequence_play(global.sequence);
 	if global.my_team == _team_scored play_audio_resource(SFX_SCORE_ALLY,0,false);
 	else play_audio_resource(SFX_SCORE_ENEMY,0,false);
 

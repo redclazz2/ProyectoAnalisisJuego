@@ -1,5 +1,5 @@
 var coll_dir = point_direction(other.x,other.y,x,y),
-	rand = random_range(-4,4);
+	rand = 0;
 	
 if speed == 0 rand = random_range(-40,40);	
 
