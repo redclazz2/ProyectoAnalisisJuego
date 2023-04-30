@@ -17,17 +17,17 @@ switch current_scene{
 		var txt = 0;
 		
 		if(global.my_team == 1){
-			if obj_Ball.score_team_1 > obj_Ball.score_team_2 then txt = scribble("[fa_center][fa_middle][scale,8][wave][spr_win_team1]");
-			else txt = scribble("[fa_center][fa_middle][scale,8][wave][spr_lose_team1]");
+			if obj_Ball.score_team_1 > obj_Ball.score_team_2 then txt = scribble("[fa_center][fa_middle][scale,9][wave][spr_win_team1]");
+			else txt = scribble("[fa_center][fa_middle][scale,9][wave][spr_lose_team1]");
 		}else{
-			if obj_Ball.score_team_1 > obj_Ball.score_team_2 then txt = scribble("[fa_center][fa_middle][scale,8][wave][spr_lose_team2]");
-			else txt = scribble("[fa_center][fa_middle][scale,8][wave][spr_win_team2]");
+			if obj_Ball.score_team_1 > obj_Ball.score_team_2 then txt = scribble("[fa_center][fa_middle][scale,9][wave][spr_lose_team2]");
+			else txt = scribble("[fa_center][fa_middle][scale,9][wave][spr_win_team2]");
 		}
 		
 		txt.draw((display_get_gui_width()/2),
-			(display_get_gui_height()/2) - 250);
-		txt = scribble("[fa_center][fa_middle][scale,8][wave][spr_play_question]");
+			(display_get_gui_height()/2) - 220);
+		txt = scribble("[fa_center][fa_middle][scale,4][wave][spr_play_question]");
 		txt.draw((display_get_gui_width()/2),
-			(display_get_gui_height()/2) - 50);
+			(display_get_gui_height()/2));
 	break;
 }

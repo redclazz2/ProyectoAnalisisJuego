@@ -48,6 +48,9 @@ if x > 305 or x < 10 {
 			current_scene = "RESULTS";
 		}
 		
+		instance_create_depth(0,0,0,obj_clickUI)
+		instance_create_depth(0,0,0,obj_clickUI)
+		
 	}
 }
 
