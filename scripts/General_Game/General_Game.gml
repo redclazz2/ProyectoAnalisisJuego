@@ -4,7 +4,6 @@ global.sequence = 0;
 global.sampler_red = make_color_rgb(180,98,123);
 global.sampler_blue = make_color_rgb(99,145,202);
 global.yes_button = 0;
-global.restart = 0;
 
 function start_match(){
 	rollback_sync_on_frame()
@@ -30,6 +29,16 @@ function allow_game_end(){
 		rollback_sync_on_frame();
 		global.listen_to_input = false;
 	}
+	
+	
+	if(global.my_team == 1){
+			if obj_Ball.score_team_1 > obj_Ball.score_team_2 then play_audio_resource(STREAM_VICTORY,1,true);
+			else play_audio_resource(STREAM_DEFEAT,1,true);
+	}else{
+			if obj_Ball.score_team_1 > obj_Ball.score_team_2 then play_audio_resource(STREAM_DEFEAT,1,true);
+			else play_audio_resource(STREAM_VICTORY,1,true);
+	}
+	
 }
 
 function play_audio_resource(audio,a,b){

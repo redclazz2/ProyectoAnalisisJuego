@@ -3,6 +3,9 @@ part_particles_create(obj_SceneManager.movement_particles,x,y,Ball,1);
 image_angle += speed;
 
 if x > 305 or x < 10 {
+	
+	if rollback_sync_on_frame() {
+	
 	score_time_out = 10;
 	play_audio_resource(SFX_BALL_SCORE,0,false);
 	MultiTrackCamera.Shake_Camera(6,15,ShakeCurve);
@@ -49,6 +52,7 @@ if x > 305 or x < 10 {
 		instance_create_depth(0,0,0,obj_clickUI)
 		instance_create_depth(0,0,0,obj_clickUI)
 		
+	}
 	}
 }
 

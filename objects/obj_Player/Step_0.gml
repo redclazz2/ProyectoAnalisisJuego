@@ -20,7 +20,7 @@ if global.listen_to_input{
 		alarm[0] = 170;
 	}
 
-	if speed > 2.8 speed = 2.8
+	if speed > 2.5 speed = 2.5
 
 	if(!_input.up and !_input.down and !_input.left and !_input.right){
 		if friction < 0.35 friction += 0.005;
@@ -45,6 +45,10 @@ if instance_exists(global.yes_button){
 	rollback_sync_on_frame();
 	with(global.yes_button) image_index = 1;	
 		if(_input.left_click and player_id == 0){
+			
+			if audio_is_playing(STREAM_VICTORY) audio_stop_sound(STREAM_VICTORY);
+			else audio_stop_sound(STREAM_DEFEAT);
+			
 			instance_destroy(obj_clickUI);
 			rollback_sync_on_frame();
 			obj_NetworkManager.alarm[0] = 2 * room_speed;
