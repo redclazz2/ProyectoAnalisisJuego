@@ -1,4 +1,4 @@
-draw_sprite_ext(spr_level_back,0,x,y-2,image_xscale,image_yscale,image_angle,c_white,0.6);
+draw_sprite_ext(spr_level_back,0,x,y-2,image_xscale,image_yscale,image_angle,c_white,1);
 
 var x_score_position_T1 = room_width/2 - 35,
 	x_score_position_T2 = room_width/2 + 35,

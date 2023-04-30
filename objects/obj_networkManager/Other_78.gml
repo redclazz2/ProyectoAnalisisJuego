@@ -8,7 +8,6 @@ switch rollback_event_id{
 			back_id = layer_background_get_id(lay_id);
 		layer_background_sprite(back_id, spr_backbattle20);
 		audio_stop_sound(STREAM_WAITING)
-		//time_source_start(myStartTimer);
 		
 		instance_create_depth(0,0,-1,obj_level);
 

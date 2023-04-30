@@ -43,6 +43,11 @@ if x > 305 or x < 10 {
 		allow_game_end();
 		MultiTrackCamera.Stop_Tracking_All();
 		visible = false;
+		
+		with(obj_SceneManager){
+			current_scene = "RESULTS";
+		}
+		
 	}
 }
 
