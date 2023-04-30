@@ -1,5 +1,5 @@
 var coll_dir = point_direction(other.x,other.y,x,y),
-	rand = random_range(-6,6);
+	rand = random_range(-4.5,4.5);
 motion_add(coll_dir +  rand, 10);
 if speed > 2.7 speed = 2.7
 
