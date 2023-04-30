@@ -20,7 +20,7 @@ if global.listen_to_input{
 		alarm[0] = 170;
 	}
 
-	if speed > 2.5 speed = 2.5
+	if speed > 2.8 speed = 2.8
 
 	if(!_input.up and !_input.down and !_input.left and !_input.right){
 		if friction < 0.35 friction += 0.005;
