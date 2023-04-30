@@ -40,19 +40,18 @@ move_bounce_all(false);
 if !my_tutorial_active and my_tutorial_alpha > 0 my_tutorial_alpha -= 0.023;
 if my_bonus_cooldown > 0 my_bonus_cooldown -= 0.02;
 
-if instance_exists(global.yes_button){
-	
+if instance_exists(global.yes_button) and player_id == 0{
 	if position_meeting(_input.x_mouse,_input.y_mouse,global.yes_button){
 	with(global.yes_button) image_index = 1;
 	
-	if(_input.left_click){
-		rollback_sync_on_frame();
-		instance_destroy(obj_clickUI);
+		if(_input.left_click and player_id == 0){
+			rollback_sync_on_frame();
+			instance_destroy(obj_clickUI);
 		
-		obj_NetworkManager.alarm[0] = 2 * room_speed;
-		obj_NetworkManager.alarm[1] = 400;
-		global.sequence = 0;
-		obj_SceneManager.current_scene = "In_Showcase1"
+			obj_NetworkManager.alarm[0] = 2 * room_speed;
+			obj_NetworkManager.alarm[1] = 400;
+			global.sequence = 0;
+			obj_SceneManager.current_scene = "In_Showcase1"
+		}
 	}
-}
-}
+}//else if global.yes_button != 0 and player_id == 1 instance_destroy(global.yes_button);

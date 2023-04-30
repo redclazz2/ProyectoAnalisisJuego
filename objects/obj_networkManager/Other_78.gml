@@ -15,5 +15,9 @@ switch rollback_event_id{
 		#endregion
 	break;
 	
+	case rollback_end_game:
+		show_message("A COMMUNICATION ERROR HAS OCURRED.");
+		game_restart();
+	break;
 	
 }
