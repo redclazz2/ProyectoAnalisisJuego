@@ -41,7 +41,34 @@ function allow_game_end(){
 	
 }
 
+
+function collision_real_id(argument0,argument1,argument2) {
+    var x_offset = argument0;
+    var y_offset = argument1;
+    var obj = argument2;
+    var collision_id = noone;
+
+    for(var i=0;i<instance_number(obj);i++) {
+        var obj_id = instance_find(obj,i);
+   
+        if bbox_top + y_offset < obj_id.bbox_bottom
+        && bbox_left + x_offset < obj_id.bbox_right
+        && bbox_bottom + y_offset > obj_id.bbox_top
+        && bbox_right + x_offset > obj_id.bbox_left {
+            collision_id = obj_id;
+        }
+    }
+
+    return collision_id;
+}
+
 function play_audio_resource(audio,a,b){
 	if !audio_is_playing(audio)
 		audio_play_sound(audio,a,b);
+}
+
+function player_collision_handler(){
+	MultiTrackCamera.Shake_Camera(3,10,ShakeCurve);
+	if global.can_glitch global.glitch = true;
+	play_audio_resource(SFX_PLAYER_COLLISION,0,false);
 }

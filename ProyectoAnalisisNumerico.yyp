@@ -148,6 +148,7 @@
     {"id":{"name":"scribble_anim_cycle","path":"scripts/scribble_anim_cycle/scribble_anim_cycle.yy",},},
     {"id":{"name":"__scribble_get_buffer_a","path":"scripts/__scribble_get_buffer_a/__scribble_get_buffer_a.yy",},},
     {"id":{"name":"scribble_super_glyph_delete","path":"scripts/scribble_super_glyph_delete/scribble_super_glyph_delete.yy",},},
+    {"id":{"name":"SFX_AUDIENCE_RESPONSE","path":"sounds/SFX_AUDIENCE_RESPONSE/SFX_AUDIENCE_RESPONSE.yy",},},
     {"id":{"name":"__shd_scribble_bake_outline_4dir","path":"shaders/__shd_scribble_bake_outline_4dir/__shd_scribble_bake_outline_4dir.yy",},},
     {"id":{"name":"spr_play_question","path":"sprites/spr_play_question/spr_play_question.yy",},},
     {"id":{"name":"spr_indicator","path":"sprites/spr_indicator/spr_indicator.yy",},},

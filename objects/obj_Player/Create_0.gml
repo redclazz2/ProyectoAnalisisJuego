@@ -1,5 +1,5 @@
 #region Movement
-acc = 0.1;
+acc = 0.15;
 my_indicator = 0;
 my_tutorial_active = true;
 my_tutorial_alpha = 1;
@@ -8,6 +8,8 @@ start_coor = 0;
 my_bonus_cooldown = 0;
 my_color = 0;
 my_enemy_color = 0;
+
+#macro max_speed 2.4
 #endregion
 
 var my_team = 0;

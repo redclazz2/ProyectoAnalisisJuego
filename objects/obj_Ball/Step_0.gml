@@ -8,6 +8,7 @@ if x > 305 or x < 10 {
 	
 	score_time_out = 10;
 	play_audio_resource(SFX_BALL_SCORE,0,false);
+	play_audio_resource(SFX_AUDIENCE_RESPONSE,0,false);
 	MultiTrackCamera.Shake_Camera(6,15,ShakeCurve);
 	global.can_glitch = true;
 	global.glitch = true;
@@ -42,6 +43,8 @@ if x > 305 or x < 10 {
 		part_particles_create(obj_SceneManager.movement_particles,x,y,Ball,30);
 	}
 	
+	has_been_reset = false;
+	
 	if score_team_1 == 8 or score_team_2 == 8{
 		play_audio_resource(SFX_SCORE_FINAL,2,false);
 		audio_stop_sound(STREAM_VS01);
@@ -57,6 +60,6 @@ if x > 305 or x < 10 {
 	}
 	}
 }
-
+if speed < 0.1 and has_been_reset speed = 0.1;
 if !global.listen_to_input speed = 0;
 if score_time_out > 0 score_time_out -= 0.05;

@@ -1,8 +1,4 @@
-if global.collision_level == other.id{
-	move_bounce_solid(false);
-}
+motion_add(point_direction(x,y,room_width/2,room_height/2), 10);
 
-MultiTrackCamera.Shake_Camera(3,10,ShakeCurve);
-if global.can_glitch global.glitch = true;
-
-play_audio_resource(SFX_PLAYER_COLLISION,0,false);
+move_bounce_solid(false);
+player_collision_handler();

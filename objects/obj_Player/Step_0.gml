@@ -20,7 +20,7 @@ if global.listen_to_input{
 		alarm[0] = 170;
 	}
 
-	if speed > 3.2 speed = 3.2
+	if speed > max_speed speed = max_speed
 
 	if(!_input.up and !_input.down and !_input.left and !_input.right){
 		if friction < 0.35 friction += 0.005;
@@ -33,6 +33,10 @@ if global.listen_to_input{
 		image_angle = direction;
 		friction = 0;
 	}
+	
+	
+	if x > 500 || x < -340 || y < -500 || y > 500 { x =start_coor y = room_height/2 }
+	
 }else{
 	friction = 1;
 }
