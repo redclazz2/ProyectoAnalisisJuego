@@ -37,7 +37,10 @@ if x > 305 or x < 10 {
 	x = room_width/2;
 	y = room_height /2;
 	
+	global.listen_to_input = false;
+	
 	with(obj_Player){
+		speed = 0;
 		y = room_height/2;
 		x = start_coor;
 		part_particles_create(obj_SceneManager.movement_particles,x,y,Ball,30);
@@ -57,7 +60,7 @@ if x > 305 or x < 10 {
 		instance_create_depth(0,0,0,obj_clickUI)
 		instance_create_depth(0,0,0,obj_clickUI)
 		
-	}
+	}else alarm[0] = 0.5 * room_speed;
 	}
 }
 if speed < 0.1 and has_been_reset speed = 0.1;
